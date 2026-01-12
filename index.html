@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naperville Heating and Cooling - Your Local Partner for Community Solutions</title>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#dc2626',
+                        accent: '#059669'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-white text-lg">🏠</span>
+                    </div>
+                    <h1 class="text-lg sm:text-xl font-bold text-primary">Naperville Heating and Cooling</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <div class="w-6 h-0.5 bg-gray-700 mb-1"></div>
+                    <div class="w-6 h-0.5 bg-gray-700 mb-1"></div>
+                    <div class="w-6 h-0.5 bg-gray-700"></div>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t hidden">
+            <nav class="px-4 py-4 space-y-2">
+                <a href="#services" class="block py-2 text-gray-700 hover:text-primary">Services</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-blue-700 text-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Your Local Partner for Community Solutions</h2>
+            <p class="text-lg sm:text-xl mb-8 max-w-3xl mx-auto opacity-90">Serving Naperville and surrounding communities with personalized heating and cooling services you can trust.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-secondary hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">Get Free Estimate</a>
+                <a href="tel:+15551234567" class="bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Professional Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We provide comprehensive heating and cooling solutions tailored to meet your specific needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">🔥</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Heating Services</h3>
+                    <p class="text-gray-600">Professional heating system installation, maintenance, and repair services to keep your home comfortable year-round.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">❄️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Cooling Services</h3>
+                    <p class="text-gray-600">Expert air conditioning installation, maintenance, and repair to ensure optimal comfort during hot summer months.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">🔧</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Emergency Repairs</h3>
+                    <p class="text-gray-600">Quick response emergency repair services when your heating or cooling system needs immediate attention.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">🛠️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Maintenance Plans</h3>
+                    <p class="text-gray-600">Preventive maintenance programs to extend system life, improve efficiency, and prevent costly breakdowns.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Energy Efficiency</h3>
+                    <p class="text-gray-600">Energy-efficient system upgrades and consultations to help reduce your utility bills and environmental impact.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">📋</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">System Inspections</h3>
+                    <p class="text-gray-600">Thorough system inspections and diagnostics to identify potential issues before they become major problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-100 py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Your Trusted Community Partner</h2>
+                    <p class="text-lg text-gray-600 mb-6">Located right here in Naperville, we understand the unique heating and cooling needs of our local community. Our commitment to personalized service and local expertise sets us apart.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Local Expertise</h3>
+                                <p class="text-gray-600">We know the local climate and building types in Naperville and surrounding areas.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Personalized Service</h3>
+                                <p class="text-gray-600">Every customer receives individual attention and customized solutions.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Community Focused</h3>
+                                <p class="text-gray-600">We're invested in our community and committed to building lasting relationships.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-primary to-blue-600 rounded-lg p-8 text-white">
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-4xl">🏢</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Visit Our Location</h3>
+                        <p class="text-lg mb-2">110 E Chicago Ave</p>
+                        <p class="text-lg mb-6">Naperville, IL 60540</p>
+                        <p class="text-sm opacity-90">Conveniently located to serve Naperville and surrounding communities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Ready to experience the difference of working with your local heating and cooling experts? Contact us today.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-white text-xl">📞</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Call Us</h3>
+                            <p class="text-gray-600 mb-2">Ready to help with all your heating and cooling needs</p>
+                            <a href="tel:+15551234567" class="text-primary font-semibold hover:text-blue-700">(555) 123-4567</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                            <span class="text-white text-xl">✉️</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Email Us</h3>
+                            <p class="text-gray-600 mb-2">Send us a message and we'll get back to you quickly</p>
+                            <a href="mailto:info@napervillehvac.com" class="text-primary font-semibold hover:text-blue-700">info@napervillehvac.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                            <span class="text-white text-xl">📍</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Visit Us</h3>
+                            <p class="text-gray-600 mb-2">110 E Chicago Ave<br>Naperville, IL 60540</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Request a Quote</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your full name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(555) 123-4567">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Needed</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option>Select a service</option>
+                                <option>Heating Services</option>
+                                <option>Cooling Services</option>
+                                <option>Emergency Repair</option>
+                                <option>Maintenance Plan</option>
+                                <option>Energy Efficiency</option>
+                                <option>System Inspection</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tell us about your heating and cooling needs..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-white">🏠</span>
+                        </div>
+                        <h3 class="text-xl font-bold">Naperville Heating and Cooling</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Your trusted local partner for all heating and cooling solutions in Naperville and surrounding communities.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>📞 <a href="tel:+15551234567" class="hover:text-white transition-colors">(555) 123-4567</a></li>
+                        <li>✉️ <a href="mailto:info@napervillehvac.com" class="hover:text-white transition-colors">info@napervillehvac.com</a></li>
+                        <li>📍 110 E Chicago Ave, Naperville, IL 60540</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 mt-8 flex flex-col sm:flex-row justify-between items-center">
+                <p class="text-gray-300 text-sm">&copy; 2026 Naperville Heating and Cooling. All rights reserved.</p>
+                <p class="text-gray-500 text-xs mt-2 sm:mt-0">Preview site by Nick Sheetz</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Form submission (placeholder)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a preview site - your form has not been actually submitted.');
+        });
+    </script>
+</body>
+</html>
